@@ -1,13 +1,7 @@
 {
-  "posts": [
-    {
-      "id": "seed-1",
-      "date": "2025-09-15T12:00:00.000Z",
-      "title": "Kicking Off: Daily AI Perspectives",
-      "html": "<p>Welcome! This feed auto-publishes one concise AI insight daily—focused on UX, adoption, and where AI is headed next.</p>",
-      "hashtags": ["ArtificialIntelligence", "UserExperience", "FutureOfWork"],
-      "sources": [],
-      "permalink": ""
-    }
-  ]
+  "id": "2025-09-19",
+  "date": "2025-09-19T12:00:00.000Z",
+  "title": "AI and UX: The Next Frontier",
+  "html": "<p>AI is reshaping user experience by enabling hyper-personalization and predictive design. The next big leap? Agentic workflows that reduce friction in everyday tasks.</p><ul class='bullets'><li>Smarter onboarding flows</li><li>Context-aware recommendations</li><li>Privacy-first personalization</li></ul><p>How do you see AI changing your daily workflow?</p>",
+  "hashtags": ["ArtificialIntelligence", "UserExperience", "FutureOfWork"]
 }
