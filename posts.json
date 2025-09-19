@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "id": "seed-1",
+      "date": "2025-09-15T12:00:00.000Z",
+      "title": "Kicking Off: Daily AI Perspectives",
+      "html": "<p>Welcome! This feed auto-publishes one concise AI insight daily—focused on UX, adoption, and where AI is headed next.</p>",
+      "hashtags": ["ArtificialIntelligence", "UserExperience", "FutureOfWork"],
+      "sources": [],
+      "permalink": ""
+    }
+  ]
+}
