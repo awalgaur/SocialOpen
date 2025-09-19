@@ -1,0 +1,35 @@
+name: Generate Daily Post
+
+on:
+  schedule:
+    - cron: "20 11 * * *"  # 11:20 UTC daily (~6:20 AM Chicago); adjust as you like
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install deps (none required)
+        run: echo "No dependencies"
+      - name: Generate daily post
+        env:
+          AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+          AZURE_OPENAI_KEY: ${{ secrets.AZURE_OPENAI_KEY }}
+          AZURE_OPENAI_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_DEPLOYMENT }}
+          BING_SEARCH_KEY: ${{ secrets.BING_SEARCH_KEY }}
+        run: node scripts/generatePost.mjs
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/posts.json
+          git commit -m "chore: daily post $(date -u +'%Y-%m-%d')"
+          git push
