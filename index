@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Daily AI Posts — by Gaurav Awal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="A daily, human-centered take on AI trends, UX, and the path forward—auto-refreshed and uniqueness-guarded (no repeats vs. last 15 posts)." />
+  assets/styles.css
+</head>
+<body>
+  <header class="site-header">
+    <h1>Daily AI • UX & Impact</h1>
+    <p class="tagline">Fresh, concise, and not like the last 15.</p>
+  </header>
+
+  <main class="container">
+    <section id="latest">
+      <h2>Today’s Post</h2>
+      <article id="today"></article>
+    </section>
+
+    <section id="archive">
+      <h3>Recent Archive</h3>
+      <ul id="postList"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Gaurav Awal • All posts are AI-assisted with human guardrails.</p>
+  </footer>
+
+  assets/app.js</script>
+</body>
+</html>
